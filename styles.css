@@ -128,7 +128,8 @@ h3{font-size:1.35rem}
   .social-proof{padding:24px}
   .hero-actions .btn{width:100%}
   .floating-donate{right:14px;bottom:14px}
-}\n.hero:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--pink) 0 20%,var(--orange) 20% 40%,var(--yellow) 40% 60%,var(--green) 60% 80%,var(--purple) 80% 100%);opacity:.95}.hero{position:relative}
+}
+.hero:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--pink) 0 20%,var(--orange) 20% 40%,var(--yellow) 40% 60%,var(--green) 60% 80%,var(--purple) 80% 100%);opacity:.95}.hero{position:relative}
 .hero-highlight{margin-top:18px;padding:16px 18px;border-left:5px solid var(--yellow);background:rgba(255,255,255,.72);border-radius:0 16px 16px 0;color:#40566c;font-weight:800}
 .support-emphasis{margin-top:18px;padding:15px 18px;background:#edf8fd;border-radius:18px;color:var(--blue)!important;font-weight:900}
 .donation-quote{margin:18px 0 6px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.1);color:#fff!important;font-weight:800;font-style:italic}
@@ -247,4 +248,87 @@ body{
     padding-left:16px;
     padding-right:16px;
   }
+}
+
+
+/* Bloque de donación arcoíris - override final */
+#donar.donation-box{
+  position:sticky;
+  top:92px;
+  background:
+    linear-gradient(125deg,
+      #ef3340 0%,
+      #ff7f1f 17%,
+      #ffd629 34%,
+      #55b947 52%,
+      #2d9cdb 70%,
+      #6b4bb3 86%,
+      #e84a9b 100%
+    ) !important;
+  color:#ffffff !important;
+  border-radius:34px !important;
+  padding:34px !important;
+  box-shadow:0 22px 60px rgba(70,70,120,.22) !important;
+  overflow:hidden !important;
+  isolation:isolate;
+}
+
+#donar.donation-box::before{
+  content:none !important;
+  display:none !important;
+  background:none !important;
+}
+
+#donar.donation-box::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(circle at 12% 8%,rgba(255,255,255,.22),transparent 22%),
+    radial-gradient(circle at 88% 88%,rgba(255,255,255,.14),transparent 28%);
+  pointer-events:none;
+}
+
+#donar.donation-box h3,
+#donar.donation-box p,
+#donar.donation-box strong{
+  color:#ffffff !important;
+}
+
+#donar .donation-tag{
+  background:rgba(255,255,255,.24) !important;
+  color:#ffffff !important;
+  border:1px solid rgba(255,255,255,.30) !important;
+  backdrop-filter:blur(8px);
+}
+
+#donar .donation-quote{
+  background:rgba(255,255,255,.16) !important;
+  color:#ffffff !important;
+  border:1px solid rgba(255,255,255,.20);
+}
+
+#donar .btn-primary,
+#donar .btn-outline{
+  background:#ffffff !important;
+  color:#17324a !important;
+  border:0 !important;
+  text-shadow:none !important;
+  box-shadow:0 10px 28px rgba(25,50,74,.16) !important;
+}
+
+#donar .btn-primary:hover,
+#donar .btn-outline:hover{
+  background:#fffdf6 !important;
+  color:#17324a !important;
+  transform:translateY(-2px);
+}
+
+#donar .donation-note{
+  color:rgba(255,255,255,.94) !important;
+}
+
+@media(max-width:900px){
+  #donar.donation-box{position:static}
 }
