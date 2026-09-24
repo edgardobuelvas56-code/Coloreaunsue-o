@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-labelledby="title desc">
+<title id="title">Colorea un Sueño</title>
+<desc id="desc">Arcoíris multicolor sobre el nombre Colorea un Sueño en azul.</desc>
+<rect width="360" height="260" rx="24" fill="#fff"/>
+<path d="M45 167 A132 132 0 0 1 281 83" fill="none" stroke="#e33b32" stroke-width="14" stroke-linecap="round"/>
+<path d="M46 166 A120 120 0 0 1 270 88" fill="none" stroke="#f28c20" stroke-width="14" stroke-linecap="round"/>
+<path d="M48 166 A108 108 0 0 1 260 93" fill="none" stroke="#f4d33d" stroke-width="14" stroke-linecap="round"/>
+<path d="M51 167 A95 95 0 0 1 249 100" fill="none" stroke="#58b947" stroke-width="14" stroke-linecap="round"/>
+<path d="M55 170 A82 82 0 0 1 238 108" fill="none" stroke="#644aa5" stroke-width="14" stroke-linecap="round"/>
+<g fill="#2878ad" font-family="'Arial Rounded MT Bold','Trebuchet MS',sans-serif" font-weight="900" text-anchor="middle">
+  <text x="229" y="155" font-size="26" transform="rotate(-8 229 155)">COLOREA UN</text>
+  <text x="231" y="215" font-size="58" transform="rotate(-4 231 215)">SUEÑO</text>
+</g>
+</svg>
