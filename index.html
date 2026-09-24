@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fundación Colorea un Sueño: campañas solidarias para apoyar la educación de niños con kits escolares, actividades y donaciones." />
-  <title>Fundación Colorea un Sueño</title>
+  <meta name="description" content="Fundación Colorea un Sueño: impulsamos oportunidades educativas para niños y comunidades del Atlántico mediante campañas, donaciones, voluntariado y alianzas." />
+  <meta name="theme-color" content="#ff5ca8" />
+  <meta property="og:title" content="Fundación Colorea un Sueño" />
+  <meta property="og:description" content="Transformamos solidaridad en oportunidades para aprender." />
+  <meta property="og:type" content="website" />
+  <title>Fundación Colorea un Sueño | Educación y solidaridad</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -12,14 +16,15 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar">
-      <a href="#inicio" class="brand">
-        <span class="brand-icon">✦</span>
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <span class="brand-icon" aria-hidden="true">✦</span>
         <span>Colorea un Sueño</span>
       </a>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-      <div class="nav-links">
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">☰</button>
+      <div class="nav-links" id="menu-principal">
         <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#impacto">Impacto</a>
         <a href="#campanas">Campañas</a>
         <a href="#apoyar">Cómo apoyar</a>
         <a href="#contacto">Contacto</a>
@@ -32,49 +37,83 @@
     <section id="inicio" class="hero">
       <div class="hero-content">
         <p class="eyebrow">Fundación social • Educación • Solidaridad</p>
-        <h1>Ayudamos a que más niños estudien con ilusión.</h1>
-        <p class="hero-text">Cada aporte se convierte en útiles escolares, actividades educativas y momentos de alegría para comunidades que necesitan apoyo.</p>
+        <h1>Transformamos solidaridad en oportunidades para aprender.</h1>
+        <p class="hero-text">Acompañamos a niños y comunidades del Atlántico mediante campañas escolares, actividades educativas, voluntariado y alianzas que ayudan a convertir cada aporte en nuevas oportunidades.</p>
         <div class="hero-actions">
-          <a href="#Donar" class="btn btn-primary">Quiero donar ahora</a>
-          <a href="#campanas" class="btn btn-secondary">Ver campañas</a>
+          <a href="#donar" class="btn btn-primary">Quiero donar</a>
+          <a href="#campanas" class="btn btn-secondary">Conocer nuestras campañas</a>
+        </div>
+        <div class="hero-trust" aria-label="Información destacada">
+          <span>Desde 2015</span>
+          <span>Atlántico, Colombia</span>
+          <span>Educación con propósito</span>
         </div>
       </div>
-      <div class="hero-card" aria-label="Resumen de impacto">
-        <div class="color-bubbles">
+
+      <aside class="hero-card" aria-label="Nuestro propósito">
+        <div class="color-bubbles" aria-hidden="true">
           <span></span><span></span><span></span><span></span>
         </div>
-        <h2>Tu ayuda pinta oportunidades</h2>
-        <p>Con una donación puedes aportar a kits escolares, meriendas, premios y actividades para niños.</p>
-        <div class="impact-grid">
-          <div><strong>+400</strong><span>kits meta</span></div>
-          <div><strong>2015</strong><span>inicio</span></div>
-          <div><strong>Atlántico</strong><span>comunidades</span></div>
-        </div>
+        <p class="mini-label">Nuestro propósito</p>
+        <h2>Tu ayuda pinta oportunidades.</h2>
+        <p>Un cuaderno, un morral, una jornada educativa o una alianza pueden convertirse en el impulso que un niño necesita para seguir soñando.</p>
+        <a href="#apoyar" class="text-link">Descubre cómo puedes ayudar →</a>
+      </aside>
+    </section>
+
+    <section id="impacto" class="impact-strip" aria-label="Nuestro impacto">
+      <div class="impact-item">
+        <strong>2015</strong>
+        <span>Inicio de nuestra historia</span>
+      </div>
+      <div class="impact-item">
+        <strong>+10 años</strong>
+        <span>Movilizando solidaridad</span>
+      </div>
+      <div class="impact-item">
+        <strong>Atlántico</strong>
+        <span>Comunidades acompañadas</span>
+      </div>
+      <div class="impact-item">
+        <strong>Educación</strong>
+        <span>Nuestro motor de cambio</span>
       </div>
     </section>
 
     <section id="quienes-somos" class="section two-columns">
       <div>
         <p class="section-label">Quiénes somos</p>
-        <h2>Una fundación que transforma solidaridad en educación.</h2>
+        <h2>Una fundación que convierte la solidaridad en oportunidades.</h2>
       </div>
-      <div>
-        <p>Somos una iniciativa que acompaña a niños y comunidades mediante campañas de entrega de útiles escolares, actividades lúdicas y espacios que motivan el aprendizaje.</p>
-        <p>Creemos que ayudar también es abrir caminos: un cuaderno, un lápiz o una mochila pueden ser el inicio de un sueño más grande.</p>
+      <div class="story-copy">
+        <p>Colorea un Sueño nació con el propósito de acompañar a niños y comunidades a través de iniciativas que fortalecen sus oportunidades educativas.</p>
+        <p>Desarrollamos campañas de entrega de útiles escolares, actividades lúdicas y educativas, jornadas de voluntariado y alianzas con personas y organizaciones que creen en el poder de la educación.</p>
+        <div class="values">
+          <span>Educación</span>
+          <span>Solidaridad</span>
+          <span>Voluntariado</span>
+          <span>Comunidad</span>
+        </div>
       </div>
     </section>
 
     <section id="campanas" class="section campaigns">
       <div class="section-heading">
         <p class="section-label">Campañas</p>
-        <h2>Campañas que han dejado huella</h2>
-        <p>Estas son algunas acciones inspiradas en el recorrido de la fundación.</p>
+        <h2>Una historia construida campaña a campaña.</h2>
+        <p>Cada jornada reúne donantes, voluntarios y comunidades alrededor de un mismo propósito: brindar herramientas que motiven a los niños a continuar aprendiendo.</p>
       </div>
-      <div class="cards">
+      <div class="cards campaign-cards">
+        <article class="card featured-card">
+          <span class="card-year">2026</span>
+          <h3>Seguimos coloreando sueños</h3>
+          <p>Continuamos movilizando apoyo para nuevas jornadas educativas y escolares en comunidades del Atlántico.</p>
+          <a href="#donar" class="card-link">Sumarme a la próxima campaña →</a>
+        </article>
         <article class="card">
           <span class="card-year">2022</span>
           <h3>Campañas escolares</h3>
-          <p>Meta de recolección de kits escolares para comunidades como Palermo, Ponedera y Villa Clarín.</p>
+          <p>Recolección de kits escolares para comunidades como Palermo, Ponedera y Villa Clarín.</p>
         </article>
         <article class="card">
           <span class="card-year">2021</span>
@@ -82,10 +121,17 @@
           <p>Entrega de kits escolares, meriendas, premios y actividades educativas para incentivar el estudio.</p>
         </article>
         <article class="card">
-          <span class="card-year">2016 - 2020</span>
-          <h3>Más niños beneficiados</h3>
-          <p>Campañas en Bosconia, Guaimaral y Rotinet con crecimiento progresivo de donaciones y colaboradores.</p>
+          <span class="card-year">2016–2020</span>
+          <h3>Más comunidades, más oportunidades</h3>
+          <p>Campañas en Bosconia, Guaimaral y Rotinet con el apoyo creciente de donantes y colaboradores.</p>
         </article>
+      </div>
+      <div class="social-proof">
+        <div>
+          <p class="section-label">Nuestra historia en imágenes</p>
+          <h3>Conoce las jornadas, voluntarios y comunidades que hacen parte de Colorea un Sueño.</h3>
+        </div>
+        <a class="btn btn-secondary" href="https://www.instagram.com/coloreaunsueno" target="_blank" rel="noopener noreferrer">Ver Instagram</a>
       </div>
     </section>
 
@@ -93,42 +139,92 @@
       <div class="support-content">
         <p class="section-label">Cómo apoyar</p>
         <h2>Hay muchas formas de sumar.</h2>
-        <p>No necesitas hacer una gran donación para generar impacto. Cada aporte cuenta y ayuda a construir mejores condiciones de estudio.</p>
+        <p>No necesitas hacer una gran donación para generar impacto. Cada aporte puede convertirse en mejores condiciones para aprender.</p>
+
         <div class="support-list">
-          <div><span>01</span><p>Donar útiles escolares, morrales, cuadernos, colores, lápices o materiales didácticos.</p></div>
-          <div><span>02</span><p>Realizar aportes económicos para la compra de kits, meriendas y logística de campaña.</p></div>
-          <div><span>03</span><p>Participar como voluntario en jornadas, actividades lúdicas o difusión de campañas.</p></div>
+          <div>
+            <span>01</span>
+            <p><strong>Donar útiles escolares.</strong><br>Morrales, cuadernos, colores, lápices y materiales didácticos.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p><strong>Realizar un aporte económico.</strong><br>Ayuda a financiar kits, meriendas, actividades y logística de campaña.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p><strong>Ser voluntario.</strong><br>Participa en jornadas, actividades educativas, organización o difusión.</p>
+          </div>
+          <div>
+            <span>04</span>
+            <p><strong>Ser aliado.</strong><br>Tu empresa u organización puede apoyar campañas, voluntariado corporativo o donaciones en especie.</p>
+          </div>
         </div>
       </div>
+
       <aside id="donar" class="donation-box">
         <p class="donation-tag">Haz parte del cambio</p>
-        <h3>Invita a donar</h3>
-        <p>Ayúdanos a colorear el sueño de más niños. Tu aporte puede convertirse en una herramienta para estudiar.</p>
-        <a class="btn btn-primary btn-full" href="https://wa.me/573023584204?text=Hola%2C%20quiero%20apoyar%20a%20la%20Fundaci%C3%B3n%20Colorea%20un%20Sue%C3%B1o%20con%20una%20donaci%C3%B3n." target="_blank" rel="noopener">Donar por WhatsApp</a>
-        <a class="btn btn-outline btn-full" href="mailto:fundacioncoloreaunsueno@gmail.com?subject=Quiero%20donar%20a%20la%20fundaci%C3%B3n&body=Hola%2C%20quiero%20conocer%20c%C3%B3mo%20puedo%20realizar%20una%20donaci%C3%B3n.">Donar por correo</a>
+        <h3>Colorea un sueño hoy</h3>
+        <p>Cuéntanos cómo deseas ayudar y te orientaremos para que tu aporte llegue a nuestras campañas.</p>
+        <a class="btn btn-primary btn-full" href="https://wa.me/573023584204?text=Hola%2C%20quiero%20apoyar%20a%20la%20Fundaci%C3%B3n%20Colorea%20un%20Sue%C3%B1o.%20Quisiera%20conocer%20las%20formas%20de%20donar." target="_blank" rel="noopener noreferrer">Donar por WhatsApp</a>
+        <a class="btn btn-outline btn-full" href="mailto:fundacioncoloreaunsueno@gmail.com?subject=Quiero%20apoyar%20a%20Colorea%20un%20Sue%C3%B1o&body=Hola%2C%20quiero%20conocer%20c%C3%B3mo%20puedo%20realizar%20una%20donaci%C3%B3n.">Donar por correo</a>
+        <p class="donation-note">También puedes escribirnos si deseas donar materiales, participar como voluntario o vincular tu empresa.</p>
       </aside>
+    </section>
+
+    <section class="section ally-section">
+      <div>
+        <p class="section-label">Empresas y aliados</p>
+        <h2>Tu organización también puede colorear sueños.</h2>
+        <p>Construimos alianzas para ampliar el alcance de las campañas mediante donaciones, patrocinio, voluntariado corporativo y aportes en especie.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/573023584204?text=Hola%2C%20represento%20a%20una%20empresa%20u%20organizaci%C3%B3n%20y%20quiero%20conocer%20c%C3%B3mo%20podemos%20ser%20aliados%20de%20Colorea%20un%20Sue%C3%B1o." target="_blank" rel="noopener noreferrer">Quiero ser aliado</a>
+    </section>
+
+    <section class="section transparency-section">
+      <div class="section-heading">
+        <p class="section-label">Confianza y transparencia</p>
+        <h2>Cada aporte tiene un propósito.</h2>
+        <p>Trabajamos para que las donaciones se conviertan en recursos y experiencias que apoyen directamente nuestras campañas educativas y comunitarias.</p>
+      </div>
+      <div class="transparency-grid">
+        <article>
+          <span>01</span>
+          <h3>Recibimos</h3>
+          <p>Aportes económicos, útiles escolares, materiales y apoyo de aliados.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Organizamos</h3>
+          <p>Planeamos cada jornada de acuerdo con las necesidades de la campaña y la comunidad.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Entregamos</h3>
+          <p>Convertimos la solidaridad en herramientas, actividades y momentos que impulsan el aprendizaje.</p>
+        </article>
+      </div>
     </section>
 
     <section id="contacto" class="section contact">
       <div class="section-heading">
         <p class="section-label">Contacto</p>
-        <h2>Hablemos y hagamos equipo</h2>
-        <p>Escríbenos para donar, ser voluntario o recibir más información sobre próximas campañas.</p>
+        <h2>Hablemos y hagamos equipo.</h2>
+        <p>Escríbenos para donar, participar como voluntario, convertirte en aliado o conocer nuestras próximas campañas.</p>
       </div>
       <div class="contact-grid">
-        <a href="tel:+573023584204">302 358 4204</a>
-        <a href="tel:+573163546884">316 354 6884</a>
-        <a href="https://www.instagram.com/coloreaunsueno" target="_blank" rel="noopener">@coloreaunsueno</a>
-        <a href="mailto:fundacioncoloreaunsueno@gmail.com">fundacioncoloreaunsueno@gmail.com</a>
+        <a href="tel:+573023584204"><small>WhatsApp / Teléfono</small><strong>302 358 4204</strong></a>
+        <a href="tel:+573163546884"><small>Teléfono</small><strong>316 354 6884</strong></a>
+        <a href="https://www.instagram.com/coloreaunsueno" target="_blank" rel="noopener noreferrer"><small>Instagram</small><strong>@coloreaunsueno</strong></a>
+        <a href="mailto:fundacioncoloreaunsueno@gmail.com"><small>Correo</small><strong>fundacioncoloreaunsueno@gmail.com</strong></a>
       </div>
     </section>
   </main>
 
-  <a class="floating-donate" href="#donar">Donar</a>
+  <a class="floating-donate" href="#donar" aria-label="Ir a la sección de donaciones">Donar</a>
 
   <footer class="footer">
-    <p>© 2026 Fundación Colorea un Sueño. Todos los derechos reservados.</p>
-
+    <p>© <span id="current-year">2026</span> Fundación Colorea un Sueño. Todos los derechos reservados.</p>
+    <p>Educación, solidaridad y oportunidades para seguir soñando.</p>
   </footer>
 
   <script src="script.js"></script>
